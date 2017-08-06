@@ -1,0 +1,596 @@
+/*Sam Gibbens -- Created 5/9/17*/
+
+#wrapper{
+  font-family: Arial;
+  display: block;
+  background-color: #fff;
+  margin-top: 3px;
+
+  /*----Grey Panda fixed BG------------*/
+  background-image: url("imgs/pandabg.png");
+  background-size: 50% 70%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 68%;
+  min-height: 700px;
+  min-width: 1100px;
+  max-width: 1250px;
+}
+#header{
+    background-color: #fff;
+    background-image: url("imgs/panda.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    /*this adjusts header img size*/ padding-bottom: 14px;
+    margin-left: 4px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+/*---Wrapper2 and Header2 are for front page-----*/
+#wrapper2{
+  font-family: Arial;
+  display: block;
+  background-color: darkgrey;
+  min-height: 700px;
+  min-width: 800px;
+  max-width: 1300px;
+  margin: auto;
+  padding-bottom: 18px;
+}
+#header2{
+      background-color: #fff;
+      background-image: url("imgs/panda.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    height: 168px;
+    width: 100%;
+    margin-top: 23%;
+    margin-bottom: auto;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #1d97fe;
+
+
+}
+
+body, html{
+  height: 100%;
+}
+body{
+  margin: 0;
+}
+
+h2{
+  text-align: center;}
+  /*this is the SUMMER SALE banner font*/
+.divbann{
+    display: run-in;
+    margin-top: 1%;
+    padding-bottom: 2%;
+    font-size: 420%;
+  }
+.hh2{
+  font-family: arial;
+    color: #fff;
+    margin-left: 9%;
+    position: relative;
+
+  }
+.hh3{
+  font-family: arial;
+    color: #fff;
+    margin-right: 8%;
+    position: relative;
+
+  }
+
+h3{
+  text-align: center;
+  font-size: 300%;
+}
+h4{
+  display: block;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 200%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-bottom: none;
+  font-family: cursive;
+  color: pink;
+
+}
+p{
+  font-size: 2em;
+}
+
+main{
+
+  min-height: 525px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+
+}
+/*--------------------------------------*/
+/*---Nav FlexBox------------------------*
+/*--------------------------------------*/
+.nav1{
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: right;
+  background-color: #448;
+  width: auto;
+  height: 48px;
+  padding-right: 2%;
+  border: 2px solid #446;
+  }
+ .navitem{
+   display: inline-flex;
+   flex: 1;
+
+}
+
+
+nav a:link{
+  color:#fff;
+  text-decoration-style: double;
+  text-decoration: none;
+}
+nav a:visited{
+  color:#000;
+}
+nav a:hover{
+  color:#000;
+}
+
+
+/*--------------------------------------*/
+/*--Dropdown Menus----------------------*
+/*--------------------------------------*/
+.dropdown{
+    position: relative;
+    display: inline-block;
+    background-color: #000;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropbtn{
+    display: inline-flex;
+      flex-direction: row-reverse;
+      flex: 1;
+      flex-wrap: nowrap;
+    background-color: #1D97FE;
+    border-radius: 4px;
+    box-shadow: 2px 2px white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    height: 30px;
+    opacity: 0.9;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1; text-align: left;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: lightgray;
+
+}
+
+/*this skeletal layout of dropdown was copied from w3schools and completely re-edited by me.*/
+/*I copied it because the comments were helpful to understand the components and their functions, my original was messy.*/
+/*--------------------------------------------------------------------*/
+
+footer{
+  text-align: center;
+  font-weight: lighter;
+  font-style: italic;
+  background-color: #446;
+  color: #fff;
+  padding-top: 20px;
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-top: 2px solid lightgrey;
+}
+
+
+
+
+
+/*---------Parallax Front page----------*
+/*--------------------------------------*/
+.parallaxcontainer{
+  display: block;
+  width: 100%;
+  margin: auto;
+  height: auto;
+}
+.parallaxcontainer1{
+  display: block;
+  width: 100%;
+  margin: auto;
+  background-color: inherit;
+  height: auto;
+}
+
+.parallax1{
+    /* The Image Used */
+    background-image: url("imgs/hero1.jpg");
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 8.5%;
+    margin-bottom: auto;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#parallax2{
+    /* The Image Used */
+    background-image: url("imgs/hero3.png");
+    height: 600px;
+    margin: auto;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax3{
+    /* The Image Used */
+    background-image: url("imgs/hero8.png");
+    height: 600px;
+    margin: auto;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax4{
+    /* The Image Used */
+    background-image: url("imgs/item5.png");
+    height: 600px;
+    margin: auto;
+    padding-top: 8%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Description paragraph on banner*/
+.divboxbann{
+  float: right;
+  margin-top: 5%;
+  margin-right: 4%;
+  width: 42%;
+}
+.descriptionbann{
+  color: #fff;
+  float: right;
+  font-size: 2em;
+  width: 92%;
+  margin: auto;
+  min-width: 80%;
+  word-wrap: normal;
+  opacity: 1.0;
+}
+
+
+/*promobar*/
+.salepromo{
+  background-color: #fff;
+  height: auto;
+  width: auto;
+  text-align: center;
+  font-size: 1.2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.salepromo a:link{color: inherit; text-decoration: none;}
+.salepromo a:visited{color: grey; text-decoration: none;}
+.salepromo a:hover{color: #fff; text-decoration: none;}
+
+/*--Quality Clothing Since 2017--*/
+.footer2{
+    color: #fff;
+    text-align: center;
+    height: auto;
+    font-size: 5em;
+    margin-bottom:0px;
+    padding-bottom: 10px;
+    padding-top: 20%;
+    font-family: cursive, arial;
+
+}
+
+/*--Shop Now!--*/
+.footer3{
+    color: #1d97fe;
+    text-align: center;
+    height: auto;
+    font-size: 10em;
+    font-weight: bold;
+    margin-bottom:0px;
+    padding-bottom: 10px;
+    padding-top: 20%;
+    font-family: arial;
+
+}
+
+/*---Found parallax tutorial on W3schools.com-----*
+/*------------------------------------------------*/
+
+
+
+/*---------STORE PAGE-----------------*/
+/*------------------------------------*/
+
+/*Store Table
+
+caption{
+  font-family: arial;
+  font-size: 40;
+  color: #1d97fe;
+  font-weight: bold;
+  background-color: lightgray;
+  border: none;
+  border-radius: 4px;
+
+
+}
+#container3{
+    width: 85%;
+    background-color: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+td{
+  min-width:140px;
+  width: auto;
+  padding: 2px;
+  text-align: center;
+  line-height: 130%;
+  background: lightgray;
+  font-family: font1;
+  color: #2f3036;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 2px;
+  padding-top: 3%;
+  position: relative;
+}
+a:visited{
+  text-decoration: none;
+  color: darkred;
+}
+.armthumb{
+  background-image: url("imgs/armthumb1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 260px;
+  height: 260px;
+  background-size: 150%;
+}
+.legthumb{
+  background-image: url("imgs/legthumb2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120%;
+}
+.earthumb{
+  background-image: url("imgs/earthumb1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+END TABLE*/
+
+/*--flex container and items layout---*/
+/*-----DailyDeals Flex Series ---------*/
+
+.ddcontainer{
+  display: flex;
+  min-height: 100px;
+  max-height: none;
+
+
+}
+/*30% off mens*/
+.deal1{
+  flex: 1;
+  background-image: url("imgs/item1.png");
+ color: #000;
+}
+/*15% off womens shoes*/
+.deal2{
+  flex: 4;
+ background-color: blue;
+ color: #000;
+}
+
+.deal3{
+  flex: 4;
+ background-color: orange;
+ color: #000;
+}
+
+
+/*----Media Size'n'Stuff----------------*
+/*--------------------------------------*/
+
+@media only all and (max-width: 768px) {
+    .divv{
+      max-width: 768px;
+      display: block;
+    }
+    html{
+      display: inline-block;
+      max-width: 768px;
+      width: 768px;
+    }
+    *, body, main,.nav1, .navitem, .deal1,.deal2, .deal3, .ddcontainer, #header, #wrapper,{
+        min-width: none;
+        max-width: 768px;
+        width: 768px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding:  0px;
+        align: center;
+        overflow-x: hidden;
+
+      }
+      #wrapper{
+        font-family: Arial;
+        display: inline-block;
+        background-color: #fff;
+        margin-top: 3px;
+
+        /*----Grey Panda fixed BG------------*/
+        background-image: url("imgs/pandabg.png");
+        background-size: 90% 50%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 50% 68%;
+        min-height: 700px;
+        min-width: 768px;
+        width: 768px;
+        }
+                    #header{
+                      width: 80%;
+                      margin-left: auto;
+                      margin-right: auto;
+                      padding-left: 5%;
+                      max-width: 768px;
+                    }
+
+
+                    body, main, div{
+                      max-width: 800px;
+                      margin-left: 0px;
+                      margin-right: 0px;
+                    }
+                    footer{
+                      clear: both;
+                      width: 100%;
+                      padding: 0px;
+                      text-align: center;
+                      max-width: 800px;
+                    }
+
+                    .nav1, nav{
+                        display: flex;
+                        flex-direction: row;
+                        padding: 0px;
+                        background-color: #448;
+                        width: 768px;
+                        height: 48px;
+                        border: 2px solid #446;
+                        align-items: center;
+                        align-content: center;
+                        max-width: 768px;
+                        }
+                    .navitem{
+                         flex: 1;
+                         padding-bottom: 3px;
+                         align-content: center;
+                         margin-left: auto;
+                         margin-right: auto;
+                         width: auto;
+
+                      }
+                    .dropdown{
+                        display: inline;
+                        width: auto;
+                    }
+                    /* The container <div> - needed to position the dropdown content */
+                    .dropbtn{
+                        display: flex;
+                          flex-flow: row;
+                          flex: 1;
+                          text-align: left;
+                        background-color: #1D97FE;
+                        border-radius: 4px;
+                        box-shadow: 1px 2px white;
+                        color: white;
+                        text-decoration: none;
+                        font-weight: bold;
+                        cursor: pointer;
+                        height: auto;
+                        opacity: 0.9;
+
+                    }
+                    /* Links inside the dropdown */
+                    .dropdown-content a {
+                        color: black;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                        text-align: left;
+                    }
+                    /* Show the dropdown menu on hover */
+                    .dropdown:hover .dropdown-content {display: block;}
+
+
+                    }
+
+                    /*this skeletal layout of dropdown was copied from w3schools and completely re-edited by me.*/
+                    /*I copied it because the comments were helpful to understand the components and their functions, my original was messy.*/
+                    /*--------------------------------------------------------------------*/
+
+
+
+
+
+/*Sources
+many images----https://www.google.com/search?biw=1172&bih=659&tbm=isch&sa=1&q=hip+indie+dark+mens&oq=hip+indie+dark+mens&gs_l=psy-ab.3...2974.2974.0.3225.1.1.0.0.0.0.61.61.1.1.0....0...1.1.64.psy-ab..0.0.0.i4dau74gnVk#imgrc=RYtnNwQPPCQblM:
+
+
+*/

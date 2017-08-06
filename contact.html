@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--Sam Gibbens Pandamoura Store Layout created: 9/5/17-->
+<!--This is the layout for the store page of Pandamoura clothing-->
+<html>
+
+<head>
+  <title>.:Pandamoura:. Quality Clothing Since 2017- </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <link rel="stylesheet" type="text/css" href="stupro.css">
+
+</head>
+
+
+<body>
+
+<!--Wrapper and Header DIV-->
+  <div id="wrapper">
+<div><a href="index.html"><header id="header"></header></a></div>
+
+<!--NAV 1-->
+<nav class="nav1">
+  <ul>
+
+    <li class="navitem"><!--Store-->
+        <div class="dropdown">
+          <button class="dropbtn">Store</button>
+      <div class="dropdown-content">
+        <a href="mens.html">Mens</a>
+        <a href="womens.html">Womens</a>
+        <a href="sloth.html">Children</a>
+      </div>
+    </div>
+    </li>
+
+    <li class="navitem"><!--Contact-->
+          <div class="dropdown">
+          <button class="dropbtn">Contact</button>
+          <div class="dropdown-content">
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        </li>
+
+    <li class="navitem"><!--Sign Up-->
+            <div class="dropdown">
+            <a href="sloth.html" style="color: #fff;">Sign Up</a>
+          </div>
+          </li>
+
+  </ul>
+</nav>
+
+
+
+<!--Content Body DIV-->
+
+<main >
+
+  <h3>Contact Us</h3>
+<div style="align-items: left; margin-left: 20%;">
+  <p style="margin-left: 10%; font-size: 2em;">Required information is marked with an asterisk (*).
+  <form id="contactform" name="contact" method="post" autocomplete="on" style="font-size: 1em; line-height: 180%; width: 50%; margin-bottom: 8%;">
+  <fieldset>
+    <label for="fname"> *First Name:</label> <input type="text" name="fname" id="fname" required="required" /><br />
+    <label for="lname"> *Last Name:</label> <input type="text" name="lname" id="lname" required="required" /><br />
+    <label for="email"> *Email:</label> <input type="email" name="email" id="email" required="required" /><br />
+    <label for="phone"> Phone:</label> <input type="tel" name="phone" id="phone" /><br />
+    <label for="comm"> Comments:</label><br />
+    <textarea name="commentbox" id="comm" rows=5 cols=30>Enter comments here...</textarea><br /><br />
+    <input type="submit" id="mySubmit">
+  </fieldset>
+
+  </form>
+
+</div>
+
+
+</main>
+
+<!--Footer DIV-->
+<div><footer>Sam Gibbens &copy; Slagathor Industries 2017</footer><div id="footer"></div></div>
+</div>
+</body>
+</html>
